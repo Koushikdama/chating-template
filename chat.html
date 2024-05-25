@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App Template</title>
+  <link rel="stylesheet" href="bootstrap3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="chat.css">
+
+
+
+
+  <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+rel="stylesheet"
+/>
+</head>
+<body>
+  <div id="app" class="app">
+
+    <!-- LEFT SECTION -->
+
+    <section id="main-left" class="main-left">
+      <!-- header -->
+      <div id="header-left" class="header-left">
+        <span class="glyphicon glyphicon-menu-hamburger hamburger-btn"></span>
+        <span class="glyphicon glyphicon-search search-btn" ></span>
+
+
+        <div class="form-outline" data-mdb-input-init>
+          <input type="text" id="formControlDefault" class="form-control" />
+          <label class="form-label" for="formControlDefault">Form control default</label>
+        </div>
+        
+      </div>
+
+      <!-- chat list -->
+      <div id="chat-list" class="chat-list">
+        <!-- user lists -->
+        
+        <!-- 1) START  LEFT ONE FRIEND-->
+        <div id="friends" class="friends">
+          <!-- photo -->
+          <div class="profile friends-photo">
+            <img src="images/ava3.jpg" alt="">
+          </div>
+          <div class="friends-credent">
+            <!-- name -->
+            <span class="friends-name">Andre Silva</span>
+            <!-- last message -->
+            <span class="friends-message">How are you?</span>
+          </div>
+          <!-- notification badge -->
+          <span class="badge notif-badge">999</span>
+        </div>
+        <!-- 1) END LEFT ONE FRIEND -->
+
+
+
+
+
+          <!-- 2) START  LEFT ONE FRIEND-->
+        <div id="friends" class="friends">
+          <!-- photo -->
+          <div class="profile friends-photo">
+            <img src="images/ava1.jpg" alt="">
+          </div>
+          
+          <div class="friends-credent">
+            <!-- name -->
+            <span class="friends-name">Mattia de Sciglio</span>
+            <!-- last message -->
+            <span class="friends-message">Hi, are you ready for the match?</span>
+          </div>
+          <!-- notification badge -->
+          <span class="badge notif-badge">7</span>
+        </div>
+        <!-- 2) END LEFT ONE FRIEND -->
+      </div>
+
+      <!-- self-profile -->
+      
+      
+    </section>
+
+
+
+    <!-- RIGHT SECTION -->
+
+    <section id="main-right" class="main-right">
+      <!-- header -->
+      
+      <div id="header-right dropdown-menu-chat" class="header-right">
+        <!-- profile pict -->
+        <div id="header-img" class="profile header-img">
+          <img src="images/ava2.jpg" alt="">
+        </div>
+
+        <!-- name -->
+        <h1 class="name friend-name" id="dropdown-menu-chat"><strong>Gomez</strong> </h1>
+      
+
+        <!-- some btn -->
+        <div class="some-btn">
+          <span class="glyphicon glyphicon-facetime-video"></span>
+          <span class="glyphicon glyphicon-earphone"></span>
+          <div class="btn-group dropstart">
+          <span class="glyphicon glyphicon-option-vertical option dropstart btn-group" data-mdb-dropdown-init
+          data-mdb-ripple-init aria-expanded="false"></span>
+            <ul class="dropdown-menu" id="dropdown-menu-header">
+              <li><a class="dropdown-item" href="#"><h3>Action</h3></a></li>
+              <li><a class="dropdown-item" href="#"><h3>Another action</h3></a></li>
+              <li><a class="dropdown-item" href="#"><h3>Something else here</h3></a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- chat area -->
+      <div id="chat-area" class="chat-area">
+        <!-- chat content -->
+
+        <!-- START YOUR CHAT TEMPLATE -->
+        <div id="your-chat" class="your-chat" style="margin-top: 30px;">
+          <div class="your-chat group dropdown" id="your-chat">
+            <p class="your-chat-balloon"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton"> koushik dama koushikkoushik dama koushikkoushik dama koushikkoushik dama koushikkoushik dama koushikkoushik dama koushik</p>
+            <div class="dropdown-menu" style="margin-right:5px" id="dropdown-menu-chat">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+            
+          </div>
+          <p class="chat-datetime"><span class="glyphicon glyphicon-ok"></span> Sun, Aug 30 | 15:45</p>
+        </div>
+        <!--END  your chat -->
+
+        <!-- START FRIENDS CHAT TEMPLATE -->
+        <div id="friends-chat" class="friends-chat">
+          <div class="profile friends-chat-photo">
+            <img src="images/ava2.jpg" alt="">
+          </div>
+          <div class="friends-chat-content">
+              <p class="friends-chat-name">Mario Gomez</p>
+
+              <p class="friends-chat-balloon">Thanks!</p>
+              <!--start-->
+              <div class="btn-group dropup">
+                    <span class="glyphicon glyphicon-option-vertical option" aria-haspopup="true" aria-expanded="false"
+                    data-mdb-ripple-init aria-expanded="false"  data-toggle="dropdown"></span>
+                <div class="dropdown-menu" id="dropdown-menu-chat" t>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+                  <!--end-->
+                <h5 class="chat-datetime">Sun, Aug 30 | 15:41</h5> 
+            </div>
+        </div>
+      <!--end friend chat template -->
+      </div>
+
+      <!-- typing area -->
+      <div id="typing-area" class="typing-area">
+        <!-- input form -->
+        <input id="type-area" class="type-area" placeholder="Type something...">
+        <!-- attachment btn -->
+        <div class="attach-btn">
+          <span class="glyphicon glyphicon-paperclip file-btn"></span>
+          <!-- <span class="glyphicon glyphicon-camera"></span>
+          <span class="glyphicon glyphicon-picture"></span> -->
+        </div>
+        <!-- send btn -->
+        <span class="glyphicon glyphicon-send send-btn"></span>
+      </div>
+    </section>
+  </div>
+
+  
+
+    <!-- jQuey, Popper, BootstrapJS -->
+    <script src="bootstrap3.3/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap3.3/js/bootstrap.min.js"></script>
+    <script src='index.js'></script>
+    <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"
+></script>
+</body>
+</html>
